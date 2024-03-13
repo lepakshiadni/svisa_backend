@@ -33,4 +33,4 @@ jobs:
         echo S3_SECRET_KEY${{secrets.S3_SECRET_KEY}} >> .env
         echo S3_BUCKET_REGION=${{secrets.S3_BUCKET_REGION}} >> .env
         echo S3_BUCKET_NAME${{secrets.S3_BUCKET_NAME}} >> .env
-    - run: pm2 restart backend
+    - run: pm2 restart backendapi
